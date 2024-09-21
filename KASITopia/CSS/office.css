@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    text-align: center;
+}
+/* search box */
+#searchbox {
+    width: 20%;
+    height: 18%;
+    font-size: 20px;
+    max-width: 300px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 100px;
+    margin-left: 80vw;
+    border: 2px solid var(--third-color);
+    background-color: #cbd8f3;
+    color: rgb(33, 58, 82);
+    display: inline-block;
+    box-shadow: inset;
+    flex-wrap: wrap;
+    margin-top: 6vw;
+}
+
+#searchbox::placeholder {
+    padding-right: 5vw;
+}
+
+#searchbox:hover {
+    border-color: rgb(38, 138, 231);
+    background-color: var(--forth-color);
+    color: rgb(21, 70, 100);
+    transition: 0.5s;
+
+}
+
+.tables table {
+    border: 2px;
+    border-collapse: collapse;
+    border-color: #171f31;
+    background-color: #cbd8f3;
+    position: relative;
+    font-size: 30px;
+    flex-wrap: wrap;
+    margin-top: 1vw;
+    width: 100%;
+    margin-left: 0.1vw;
+}
+
+.tables td,
+th {
+    border: 2px;
+    border-color: rgba(13, 133, 245);
+    border-style: groove;
+    color: var(--text-color);
+    font-size: 70%;
+}
+
+.tables table tbody tr:nth-child(even) {
+    background-color: #b4c9f6;
+}
+
+.tables table tbody tr:hover {
+    box-shadow: 0 0 10px rgba(57, 81, 112, 0.5);
+}
+
+img {
+    width: 15%;
+    height: 15%;
+    border: 2px;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: var(--third-color);
+    display: flex;
+}
+
+.tables h2 {
+    display: inline-block;
+    font-size: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-style: solid;
+    color: var(--text-color);
+    position: relative;
+    margin-top: 2vw;
+    margin-left: 8vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tableimg {
+    width: 10vw;
+    height: 10vw;
+    display: flexbox;
+    transform: translateY(-2vw);
+    margin-right: 3vw;
+    margin-left: -6vw;
+    margin-bottom: -2vw;
+    flex-wrap: wrap;
+}
+
+.tables span {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.inside img {
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    margin-right: 7%;
+    margin-left: 2%;
+}
+
+.tables a {
+    text-decoration: none;
+    color: var(--text-color);
+    transition: 0.5;
+}
+
+.tables a:hover {
+    text-decoration: underline;
+}
+
+.tables {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+@media(max-width:785px) {
+
+    #searchbox {
+        margin-top: 25vw;
+        margin-right: 1vw;
+        width: 22vw;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .tables h2 {
+        font-size: 5vw;
+        margin-left: 10vw;
+        white-space: nowrap;
+        margin-top: 10vw;
+
+
+    }
+
+    .tables.tableimg {
+        margin-top: 15vw;
+        margin-right: 20vw;
+        margin-left: 10vw;
+
+    }
+
+}
+
+@media (max-width: 450px){
+    #searchbox {
+        height: 10%;
+        width: 20vw;
+        font-size: 10px;
+        margin-right: 0;
+        margin-left: 95vw;
+    }   
+}
+
+/* Next & previous buttons */
+.prev1,
+.next1 {
+    cursor: pointer;
+    width: 2vw;
+    margin-top: 1vw;
+    padding: 1vw;
+    color: #3d52a0;
+    font-weight: bold;
+    font-size: 2vw;
+    transition: all 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev1:hover,
+.next1:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}

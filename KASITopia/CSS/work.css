@@ -1,0 +1,94 @@
+* {
+    text-align: center;
+    margin: 20vh auto;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.major a {
+    margin-top: 1vw;
+    font-size: 2.5vw;
+    text-align: center;
+    font-weight: bolder;
+    color: rgb(19, 54, 100);
+
+}
+
+h1 {
+    color: #002244;
+}
+
+h2 {
+    color: rgb(19, 54, 100);
+    font-size: 30px;
+}
+
+.major {
+    border-radius: 30%;
+    width: 20vw;
+    height: 20vw;
+    box-shadow: 20px 20px 20px 20px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    margin: 5vw;
+    display: flex;
+    background-color: rgba(191, 180, 180, 0.8);
+    transition: width 0.3s, height 0.3s, border-radius 0.3s;
+
+}
+
+.major:hover {
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.6);
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.work li:hover {
+    color: rgb(85, 122, 170);
+    transform: scale(1.2);
+    cursor:context-menu;
+
+}
+
+
+
+.description {
+    color: #ffffff;
+    font-size: large;
+    font-weight: bold;
+    display: none;
+    cursor:context-menu;
+
+}
+
+div {
+    display: flex;
+    margin: 5px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+
+#workCS {
+    display: none;
+}
+
+@media (max-width : 1025px) {
+    
+}
+
+@media (max-width : 450px) {
+    .description {
+        font-size: 2vw;
+    
+    }
+    h1 {
+        font-size: 4vw;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    .major {
+        margin-left: 20vw;
+    }
+}

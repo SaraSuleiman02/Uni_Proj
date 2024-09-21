@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url(../img/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.form-container {
+    margin: 15vh auto;
+}
+
+#schedule_form {
+    border: 1px solid white;
+    border-radius: 10%;
+    width: 65vw;
+    box-shadow: 20px 20px 20px 20px rgba(0, 0, 0, 0.4);
+    background-color: white;
+    padding: 30px;
+
+}
+
+#header {
+    font-size: large;
+    background-color: #8697c4;
+    color: white;
+    height: 10%;
+    border-radius: 10px;
+}
+
+h3,
+.name {
+    color: rgb(49, 48, 48);
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+select {
+    border-radius: 20px;
+    width: 250px;
+    height: 80px;
+    cursor: pointer;
+    margin: 5px;
+    border: 2px solid lightgray;
+    font-size: 18px;
+    color: rgb(49, 48, 48);
+
+}
+
+.course-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px;
+    align-items: flex-start;
+    display: none;
+
+}
+
+
+
+
+#creditHrs {
+    border: 2px solid lightgray;
+    border-radius: 20px;
+    width: 230px;
+    height: 60px;
+}
+
+input[type="range"] {
+    width: 50vw;
+}
+
+label {
+    font-size: large;
+    font-weight: bold;
+    margin: 0%;
+
+}
+
+button {
+    border-radius: 10px;
+    width: 240px;
+    height: 40px;
+    border: 0;
+    color: white;
+    background-color: #8697c4;
+}
+
+button:hover {
+    box-shadow: 0 5px 10px 1px #8697c4;
+    border-radius: 30px;
+    transition: border-radius 2s;
+    transform: translateY(-.25em);
+
+}
+
+div,
+input {
+    margin-bottom: 0%;
+
+}
+
+.name {
+    color: rgb(49, 48, 48);
+
+}
+
+input:hover {
+    box-shadow: 10px #8697c4;
+    transform: scale(1.05);
+    transition: 1s;
+}
+
+#creditHrs {
+    font-size: larger;
+}
+
+/* multi selector override styles */
+.mult-select-tag .item-label {
+    color: white !important;
+    font-size: large !important;
+}
+
+.mult-select-tag .item-container {
+    background-color: #8697c4 !important;
+    border: 2px solid white !important;
+    border-radius: 10px !important;
+}
+
+
+
+.mult-select-tag .item-close-svg {
+    color: white !important;
+}
+
+@media (max-width: 450px) {
+    #schedule_form {
+        width: 90vw;
+    }
+
+    #header {
+        font-size: small;
+
+    }
+}

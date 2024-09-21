@@ -1,0 +1,281 @@
+ @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background: url(../img/bg.jpg);
+    background-size: cover;
+}
+
+.container2 {
+    max-width: 45%;
+    margin: 20vh auto;
+    padding: 5vw 2vw;
+    background-color: #fff;
+    border-radius: 35px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    margin-bottom: 10vh;
+    margin-left: 2vw;
+}
+
+.formtxt p {
+    margin-top: 1vw;
+    text-align: center;
+    font-size: 1.3vw;
+    font-family: 'Poppins', sans-serif;
+}
+
+.KASITopia {
+    font-style: italic;
+}
+
+.collapsible {
+    color: white;
+    cursor: pointer;
+    padding: 2vw;
+    border: none;
+}
+
+.collapsible h2 {
+    padding: 1vw;
+    font-size: 1vw;
+    text-align: center;
+    background-color: #bed2ff;
+    border-radius: 1vw;
+    transition: 0.8s;
+    transition-duration: 0.9s;
+    transition-timing-function: ease;
+}
+
+.collapsible :hover {
+    box-shadow: rgba(64, 78, 92, 0.813) 0 0 3vw 0.5vw;
+}
+
+.content {
+    width: 110%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 2vw;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.8s ease-out;
+    background-color: #f1f1f1;
+}
+
+h3 {
+    text-align: center;
+    margin-left: 4vw;
+    margin-bottom: 3vw;
+    font-size: 1.5vw;
+    color: #050505;
+}
+
+.gender {
+    text-align: center;
+    word-spacing: 1vw;
+    margin-left: 4vw;
+}
+
+.time {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+    margin-left: 4vw;
+}
+
+.time h4 {
+    text-align: center;
+}
+
+select {
+    padding: 1vw 2vw;
+    border: 0.1vw solid #dddddd;
+    border-radius: 1vw;
+    cursor: pointer;
+}
+
+select:hover {
+    outline: none;
+    border: 0.1vw solid #bbbbbb;
+}
+
+label {
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.gender label {
+    color: black;
+}
+
+.bookGuide-btn {
+    font-size: 0.75vw;
+    color: white;
+    width: 10vw;
+    height: 3vw;
+    background-color: var(--third-color);
+    margin-left: 4vw;
+    margin-bottom: 3vh;
+    border-radius: 15vh;
+    border-color: var(--third-color);
+    transition: 0.6s;
+}
+
+.bookGuide-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 1vw 1vw 5vw rgba(0, 0, 0, 0.5);
+}
+
+input[type="range"] {
+    width: 100%;
+}
+
+input[type="radio"]:checked {
+    box-shadow: 0 0 0 0.3vw orange;
+    border-radius: 1vw;
+}
+
+input [type="radio"] {
+    vertical-align: middle;
+}
+
+option:checked {
+    box-shadow: 0 0 0 1vw rgb(9, 255, 0);
+    color: rgb(9, 1, 15);
+}
+
+/*--------------- Media Queries -----------------*/
+
+@media (max-width : 1025px) {
+    .formtxt p {
+        font-size: 1.5vw;
+    }
+
+    h3,
+    .gender,
+    .time {
+        margin-left: 4vw;
+    }
+
+    .bookGuide-btn {
+        font-size: 1.5vw;
+        margin-left: 2vw;
+    }
+}
+
+@media (max-width : 769px) {
+
+    h3,
+    .gender,
+    .time {
+        margin-left: 5vw;
+    }
+
+    .gender label,
+    .time label {
+        font-size: 1.5vw;
+    }
+
+    .time h4 {
+        font-size: 1.75vw;
+    }
+
+    .bookGuide-btn {
+        width: 15vw;
+        height: 8vh;
+        border-radius: 3vw;
+        margin-left: 2vw;
+        margin-top: 2vh;
+    }
+    .meetingLoc p {
+        font-size: 2vw;
+    }
+}
+
+@media (max-width : 426px) {
+    .container2 {
+        max-width: 60%;
+    }
+
+    .formtxt p {
+        font-size: 1.9vw;
+    }
+
+    .collapsible h2 {
+        padding: 1vw;
+        font-size: 1.5vw;
+    }
+
+    .content {
+        width: 107%;
+        border-bottom-left-radius: 2vw;
+        border-bottom-right-radius: 2vw;
+    }
+    form {
+        margin-left: 7vw;
+    }
+
+    h3,
+    .gender,
+    .time {
+        margin-left: 2vw;
+    }
+
+    .gender label,
+    .time label {
+        font-size: 2vw;
+    }
+
+    h3 {
+        font-size: 2vw;
+        padding-top: -3vh;
+    }
+
+    .gender h4 {
+        font-size: 2vw;
+    }
+
+    [type="radio"] {
+        height: 10px;
+        width: 10px;
+        vertical-align: middle;
+    }
+    #bookingTime {
+        width: 15vw;
+        font-size: 2vw;
+    }
+    #bookingDay {
+        width: 30vw;
+        font-size: 2vw;
+    }
+    .bookGuide-btn {
+        width: 13vw;
+        height: 5vh;
+        margin-left: 4vw;
+        border-radius: 3vw;
+        transition: 0.6s;
+        cursor: pointer;
+        border: none;
+        font-size: 2vw;
+        transition: ease-out 0.3s;
+    }
+}
+
+@media (max-width: 321px) {
+    .content {
+        border-bottom-left-radius: 4vw;
+        border-bottom-right-radius: 4vw;
+    }
+    form {
+        margin-left: 8vw;
+    }
+    
+}

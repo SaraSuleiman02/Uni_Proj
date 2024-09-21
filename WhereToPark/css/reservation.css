@@ -1,0 +1,294 @@
+*{
+    padding : 0;
+    margin : 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --bg-color: white;
+    --text-color: black;
+    --second-color: rgba(215, 233, 15, 0.44);
+    --main-color : black;
+   --big-font: 6rem;
+   --h2-font : 3rem;
+   --p-font : 1.1rem; 
+}
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/*--------------- Header --------------------*/
+
+header {
+    height: 13vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 30px 18%;
+    transition: 0.6s;
+    box-shadow: 5px 10px 56.1276px rgb(55 55 55 / 12%);
+}
+
+header .logo{
+    position: relative;
+    transition: 0.6s;
+}
+header .logo img{
+    height: 17vh;
+    width: 17vh;
+    margin-top: 15px;
+}
+.navbar {
+    display: flex;
+}
+.navbar a {
+    color: var(--text-color);
+    font-size: var(--p-font);
+    font-weight: 500;
+    padding: 10px 22px;
+    border-radius: 4px;
+    transition: 0.6s;
+}
+.navbar a:hover{
+    background: white;
+    color:var(--text-color);
+    box-shadow: 5px 10px 30px rgb(85 85 85 / 20%);
+    border-radius: 4px;
+}
+#menu-icon{
+    color: var(--text-color);
+    font-size: 35px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+.login{
+    color: var(--bg-color);
+    font-size: var(--p-font);
+    font-weight: 500;
+    padding: 10px 22px;
+    border-radius: 4px;
+    transition: 0.6s;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;    
+}
+.login :hover{
+    background: white;
+    color:var(--text-color);
+    box-shadow: 5px 10px 30px rgb(85 85 85 / 20%);
+    border-radius: 4px;
+}
+header .sticky{
+    background: var(--bg-color);
+    padding: 10px 18%;
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}
+.sticky .logo{
+    color: var(--text-color);
+}
+.sticky .navbar a{
+    color: var(--text-color);
+}
+body{
+    background: url(--second-color);
+}
+
+/*-------------- RESERVATION SECTION ---------------*/
+.container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    height: 550px;
+    margin-top: 50px;
+    background: url(../img/background2-blur.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+}
+.item{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 58%;
+    height: 100%;
+    color: var(--bg-color);
+    background: transparent;
+    padding: 80px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.item img{
+    height: 30vh;
+    width: 30vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.text-item h2{
+    font-size: 40px;
+    line-height: 1;
+}
+.text-item p{
+    font-size: 16px;
+    margin: 20px 0;
+}
+.container .reservation-section{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: calc(100% - 100%);
+    height: 100%;
+    color: var(--bg-color);
+}
+.reservation-section .form-box{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70vh;
+    height: 50vh;
+}
+.reservation-section .form-box h2{
+    text-align: center;
+    font-size: 25px;
+}
+.form-box img{
+    width: 50vh;
+}
+.form-box select{
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    padding: 8px;
+    margin-top: 10px;
+}
+.btn{
+    background: var(--bg-color);
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    color: var(--text-color);
+    box-shadow: rgba(0, 0, 0, 0.14);
+}
+button a{
+    font-style: none;
+    color: var(--text-color);
+}
+
+/*-------------- PAYMENT SECTION ---------------*/
+.reservation-section .form-b{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70vh;
+    height: 50vh;
+}
+.reservation-section .form-b h2{
+    text-align:right;
+    font-size: 25px;
+}
+.form-b img{
+    width: 50vh;
+}
+.row-items{
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(150px,auto));
+    grid-gap: 2rem;
+    align-items: left;
+    text-align: center;
+    margin-top: 5rem;
+    margin-left: 20px;
+}
+.row-items .container-box{
+    background: var(--bg-color);
+    border: 1px solid #f0eded;
+    padding: 20px 5px; 
+    border-radius: 4px;
+    transition: all 1s ease 0s;
+    cursor: pointer;
+    margin-top: 17rem;
+}
+.container-img img{
+    height: 50px;
+    width: 50px;
+    padding: 15px; 
+    background: var(--bg-color);
+    border-radius: 4px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+.container-box p{
+    font-size: 15px;
+    color: var(--text-color);
+}
+.container-box:hover{
+    box-shadow: 5px 30px 56.1276px rgb(55 55 55 / 12%);
+    border: 1px solid transparent;
+    transform: translateY(-3px);
+}
+
+/*-------------- CREDIT-CARD SECTION ---------------*/
+.form-box .input-box{
+    width: 340px;
+    height: 50px;
+    margin: 30px 0;
+    position: relative;
+}
+.input-box input{
+    width: 100%;
+    height: 7vh;
+    background: transparent;
+    border: none;
+    outline-style: inset;
+    font-size: 16px;
+    padding-right: 28px;
+    border-radius: 5px;
+}
+input[type=date]:required:invalid::-webkit-datetime-edit {
+    color: transparent;
+}
+input[type=date]:focus::-webkit-datetime-edit {
+    color: black !important;
+}
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 16px;
+    font-weight: 600px;
+    pointer-events: none;
+    transition: .5s ease;
+    color: #fff;
+
+}
+.input-box input:focus~ label,
+.input-box input:valid~ label{
+    top: -5px;
+}

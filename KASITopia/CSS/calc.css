@@ -1,0 +1,313 @@
+h1 {
+    margin-top: 15vh;
+    text-align: center;
+}
+
+.calc-container {
+    margin-top: 1vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+    width: 60vw;
+    margin-left: 20vw;
+    margin-bottom: 15vh;
+    border: 2px solid var(--forth-color);
+    border-radius: 1vw;
+    box-shadow: 5px 10px 56.1276px var(--third-color);
+}
+
+.container-1 {
+    width: 60vw;
+}
+
+.header-1 {
+    padding: 1vw;
+    width: 100%;
+    font-size: 1.5vw;
+    text-align: center;
+    border: 1px solid var(--forth-color);
+    border-radius: 1vw 1vw 0 0;
+    background: var(--forth-color);
+    color: white;
+}
+
+form {
+    margin-top: 2vh;
+    margin-left: 5vw;
+}
+
+.flex-container {
+    width: 50vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.course-field label,
+.course-field-1 label {
+    font-size: 1vw;
+    font-weight: bold;
+}
+
+.original-gpa,
+.re-gpa,
+.credit-hours,
+.re-credit-hours {
+    width: 15vw;
+    margin-bottom: 2vh;
+    border: none;
+    border-radius: 0.5vw;
+    text-align: center;
+    padding: 1vh 0;
+}
+
+.course-unit,
+.course-grade {
+    width: 7vw;
+    margin-bottom: 2vh;
+    border: none;
+    border-radius: 0.5vw;
+    text-align: center;
+    padding: 1vh 0;
+}
+
+.buttons,
+.buttons-1 {
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.buttons button,
+.buttons-1 button {
+    font-size: 0.75vw;
+    color: white;
+    width: 10vw;
+    height: 3vw;
+    background-color: var(--third-color);
+    margin-left: 4vw;
+    margin-bottom: 3vh;
+    border-radius: 15vh;
+    border-color: var(--third-color);
+    transition: 0.6s;
+}
+
+.buttons button:hover,
+.buttons-1 button:hover {
+    transform: scale(1.1);
+    background-color: rgb(80, 80, 255);
+}
+
+
+/*----------- Recalculate Section---------------*/
+
+.collapsible {
+    background-color: #a2afcd;
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 1vw;
+}
+
+.collapsible h6 {
+    transition: 0.4s ease;
+}
+
+.collapsible h6:hover {
+    transform: scale(1.1);
+}
+
+.recalculate-course-unit,
+.recalculate-course-grade,
+.recalculate-new-grade {
+    width: 7vw;
+    margin-bottom: 2vh;
+    border: none;
+    border-radius: 0.5vw;
+    text-align: center;
+    padding: 1vh 0;
+}
+
+.content {
+    padding: 0;
+    transition: max-height 0.2s ease-out;
+    max-height: 0px;
+    overflow: hidden;
+}
+
+.result-div {
+    border: 1px solid var(--forth-color);
+    border-radius: 0 0 1vw 1vw;
+    background-color: var(--forth-color);
+}
+
+.result-div p {
+    color: white;
+    text-align: center;
+    font-size: 2vw;
+    font-weight: normal;
+    margin-top: 1vw;
+    transition: all 0.4s;
+    cursor: pointer;
+}
+
+/*----------- Media Quries -----------*/
+
+@media (max-width : 1025px) {
+
+    .original-gpa,
+    .re-gpa,
+    .credit-hours,
+    .re-credit-hours,
+    .recalculate-course-unit {
+        font-size: 1vw;
+        width: 13vw;
+    }
+
+
+    .course-unit,
+    .course-grade,
+    .recalculate-course-unit,
+    .recalculate-course-grade,
+    .recalculate-new-grade {
+        width: 6vw;
+        font-size: 1vw;
+    }
+}
+
+@media (max-width: 769px) {
+
+    .original-gpa,
+    .re-gpa,
+    .credit-hours,
+    .re-credit-hours {
+        width: 12vw;
+    }
+
+    .recalculate-course-unit {
+        width: 5vw;
+    }
+}
+
+@media (max-width: 426px) {
+
+    .calc-container {
+        width: 80vw;
+        margin-left: 10vw;
+    }
+
+    .container-1 {
+        width: 80vw;
+    }
+
+    .flex-container {
+        width: 70vw;
+    }
+
+    .course-field label,
+    .course-field-1 label {
+        font-size: 1.5vw;
+    }
+
+    .original-gpa,
+    .re-gpa,
+    .credit-hours,
+    .re-credit-hours {
+        width: 17vw;
+        font-size: 1.5vw;
+    }
+
+    .course-unit {
+        width: 8vw;
+        font-size: 1.5vw;
+    }
+
+    .course-grade {
+        width: 9vw;
+        font-size: 1.5vw;
+    }
+
+    .recalculate-course-grade,
+    .recalculate-new-grade {
+        width: 6vw;
+        font-size: 1.5vw;
+    }
+
+    .collapsible {
+        padding: 0.5vw;
+    }
+
+    .collapsible h6 {
+        font-size: 2.5vw;
+    }
+
+    .buttons button,
+    .buttons-1 button {
+        font-size: 1.5vw;
+        color: white;
+        width: 15vw;
+        height: 5vw;
+        background-color: var(--third-color);
+        margin-left: 4vw;
+        margin-bottom: 3vh;
+        border-radius: 15vh;
+        border-color: var(--third-color);
+        transition: 0.6s;
+    }
+
+    .result-div p {
+        font-size: 2.5vw;
+    }
+}
+
+@media (max-width: 321px) {
+
+    .header-1 {
+        font-size: 2.5vw;
+    }
+
+    .course-field label,
+    .course-field-1 label {
+        font-size: 1.7vw;
+    }
+
+    .course-unit {
+        width: 4vw;
+    }
+
+    .course-grade {
+        width: 5vw;
+    }
+
+    .original-gpa,
+    .re-gpa,
+    .credit-hours,
+    .re-credit-hours,
+    .recalculate-course-unit {
+        width: 14vw;
+        font-size: 1.5vw;
+    }
+
+    .course-field-1:last-child label {
+        font-size: 1.25vw;
+    }
+
+    .recalculate-course-unit {
+        width: 5vw;
+    }
+
+    .recalculate-course-grade,
+    .recalculate-new-grade {
+        width: 6vw;
+    }
+
+}

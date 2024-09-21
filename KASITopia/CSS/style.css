@@ -1,0 +1,524 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --bg-color: #ede8f5;
+    --text-color: #3d52a0;
+    --second-text-color: black;
+    --second-color: #7091e6;
+    --third-color: #8697c4;
+    --forth-color: #adbbda;
+    --main-color: black;
+    --big-font: 8vw;
+    --h2-font: 4vw;
+    --p-font: 1.1vw;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/*--------------- Home Section --------------------*/
+#home {
+    padding: 80px 18%;
+}
+
+.home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(../img/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    align-items: center;
+}
+
+.home-text h1 {
+    font-size: var(--big-font);
+    line-height: 1.2;
+    color: white;
+    font-family: "Dancing Script", cursive;
+    letter-spacing: 4px;
+    margin-bottom: 1vw;
+    margin-left: 12vw;
+}
+
+.home-text p {
+    color: #ffffffbf;
+    font-family: 'Poppins', sans-serif;
+    font-size: var(--p-font);
+    font-weight: 400;
+    line-height: 38px;
+    margin-bottom: 1vw;
+    margin-left: 3vw;
+}
+
+.home-btn {
+    display: inline-block;
+    font-size: var(--p-font);
+    padding: 1vw 1vw;
+    margin-left: 4vw;
+    background: var(--bg-color);
+    color: var(--main-color);
+    border-radius: 2vw;
+    transition: all 0.4s ease;
+}
+
+.home-btn:hover {
+    background: var(--third-color);
+    color: white;
+    transform: scale(1.1);
+
+}
+
+@media only screen and (max-width : 750px) {
+    .home-text p {
+        font-size: 1.9vw;
+    }
+
+    .home-btn {
+        font-size: 1.7vw;
+    }
+}
+
+/*--------------- LOGIN --------------------*/
+
+
+.popup {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.popup-content {
+    background-color: #fff;
+    width: 500px;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+
+
+}
+
+.close {
+    position: absolute;
+    right: 15px;
+    height: 20px;
+    border-radius: 50%;
+    width: 20px;
+    cursor: pointer;
+
+}
+
+/*--------------- About-Us Section --------------------*/
+.heading h1 {
+    font-size: var(--big-font);
+    line-height: 1.2;
+    color: var(--third-color);
+    font-family: 'Poppins', sans-serif;
+    /* from google fonts */
+    letter-spacing: 4px;
+    text-align: center;
+    border-bottom: 2px solid var(--third-color);
+}
+
+.about-us {
+    align-items: center;
+    width: 85%;
+    margin: auto;
+}
+
+.content {
+    padding: 20px;
+}
+
+.content p {
+    color: var(--text-color);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2vw;
+    line-height: 1.5;
+    margin: 15px 0px;
+}
+
+.content h2 {
+    padding-top: 5%;
+    color: var(--text-color);
+    font-size: 1.5vw;
+    margin: 15px 0px;
+    text-align: center;
+}
+
+#services-container {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#services-container button {
+    width: 20vw;
+    height: 3vw;
+    background-color: var(--third-color);
+    margin-left: 4vw;
+    margin-bottom: 3vh;
+    border-radius: 15vh;
+    border-color: var(--third-color);
+    transition: 0.6s;
+}
+
+#services-container button:nth-of-type(7) {
+    margin-left: 15vw;
+}
+
+#services-container button:hover {
+    transform: scale(1.1);
+    box-shadow: 5px 30px 56.1276px rgb(55 55 55 / 12%);
+    border: 1px solid transparent;
+    transform: translateY(-3px);
+    background: var(--text-color);
+    color: white;
+    transform: scale(1.1);
+}
+
+#services-container a {
+    font-family: 'Poppins', sans-serif;
+    font-size: small;
+    color: black;
+}
+
+@media only screen and (max-width : 850px) {
+    .content p {
+        font-size: 3vw;
+    }
+
+    .content h2 {
+        font-size: 5vw;
+    }
+
+    #services-container {
+        flex-direction: column;
+    }
+
+    #services-container button {
+        width: 45vw;
+        height: 70%;
+    }
+
+    #services-container button:last-child {
+        margin-left: 4vw;
+    }
+
+    #services-container a {
+        font-size: 3vw;
+    }
+}
+
+/*--------------- Container --------------------*/
+.text h2 {
+    font-size: var(--h2-font);
+    line-height: 1.1;
+    text-align: center;
+}
+
+#events-container {
+    width: 75%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.container-box {
+    background: var(--bg-color);
+    width: 500px;
+    height: 400px;
+    border-radius: 4px;
+    transition: all 1s ease 0s;
+    cursor: pointer;
+    margin: 2vw;
+
+}
+
+.container-box:hover>*:not(.corner-box) {
+    box-shadow: 5px 30px 56.1276px rgb(55, 55, 55, 0.12);
+    border: 1px solid transparent;
+    transform: translateY(-3px);
+}
+
+.container-img img {
+    height: 250px;
+    width: 500px;
+    background: var(--bg-color);
+    border-radius: 4px;
+    margin-bottom: 15px;
+
+    cursor: pointer;
+    align-items: start;
+
+    z-index: -1;
+}
+
+.container-box p {
+    padding: 3px;
+    font-size: 13px;
+    color: var(--text-color);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+
+}
+
+.event-border {
+    border: 1px solid transparent;
+    box-shadow: 5px 30px 56.1276px rgb(55, 55, 55, 0.12);
+
+}
+
+.corner-box {
+
+    width: 7%;
+    height: 10%;
+
+    border-radius: 0 0 30% 30%;
+    border-width: 0 3px 3px 0;
+    background-color: #adbbdadc;
+    /*background:    solid var(--forth-color) transparent;*/
+    color: #f2f2f2;
+    z-index: 1;
+    align-self: center;
+    font-size: 15px;
+    position: absolute;
+    padding: 5px 10px;
+    margin-left: 1vw;
+
+
+}
+
+.container-box h1 {
+    margin-left: 1.5vw;
+    font-size: 2vw;
+
+}
+
+@media only screen and (max-width : 730px) {
+    #events-container {
+        flex-direction: column;
+    }
+
+    .container-box {
+        width: 69vw;
+        height: 50vw;
+        margin-left: 1vw;
+        margin-bottom: 2vw;
+    }
+
+    .container-img img {
+        height: 30vw;
+        width: 69vw;
+    }
+
+    .container-box p {
+        font-size: 3vw;
+    }
+}
+
+/*--------------- SlideShow --------------------*/
+.slideshow-container {
+    width: 45vw;
+    position: relative;
+    margin: auto;
+}
+
+.slideshow-container h2 {
+    font-size: 4vw;
+    line-height: 1.2;
+    color: var(--third-color);
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 2px;
+    text-align: center;
+    border-bottom: 2px solid var(--third-color);
+    padding-bottom: 3vh;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    width: 100%;
+    height: 25vw;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: 2vw;
+    margin-top: 1vw;
+    padding: 1vw;
+    color: white;
+    font-weight: bold;
+    font-size: 2vw;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.prev {
+    left: 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 1vw;
+    padding: 8vw 1vw 0vh;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/*-----Media Queries--------*/
+@media (max-width: 1441px) {
+    #events-container {
+        margin-left: 32vw;
+    }
+}
+
+@media (max-width: 1025px) {
+    #events-container {
+        margin-left: 23vw;
+    }
+    .corner-box {
+        width: 10%;
+    }
+}
+
+@media (max-width: 769px) {
+    #events-container {
+        margin-left: 15vw;
+    }
+    .corner-box {
+        width: 13%;
+    }
+    .container-box p {
+        font-size: 10px;
+    }
+    .container-box {
+        height: 280px;
+    }
+    .corner-box {
+        width: 20%;
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .corner-box {
+        width: 20%;
+        height: 8% ;
+        font-size: 10px;
+    }
+    .slideshow-container {
+        width: 60vw;
+    }
+
+    .mySlides img {
+        height: 40vw;
+    }
+
+    .numbertext {
+        padding: 19vw 1vw 0vh;
+    }
+
+    .dot {
+        cursor: pointer;
+        height: 2vw;
+        width: 2vw;
+    }
+}
+
+/*--------------- Footer --------------------*/
+footer {
+    background-color: var(--third-color);
+    color: #fff;
+    padding: 5px 0 10px;
+    text-align: center;
+    margin-top: auto;
+    /* This will make the footer stick to the bottom */
+}
+
+/* Styling for the copyright text */
+.copyright {
+    margin-top: 20px;
+}

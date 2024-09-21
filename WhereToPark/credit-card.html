@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width , initial scale=1">
+
+    <link rel="stylesheet" type="text/css" href="css/reservation.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+
+    <!-- Fonts From Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <title>Parking Reservation</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header style="background-color: white;">
+        <br>
+        <a href="#home" class="logo"><img src="img/logo.png" alt=""></a> <!-- Change it to logo -->
+
+        <div class="bx bx-menu" id="menu-icon">
+        </div>
+        <!-- NAVBAR -->
+        <ul class="navbar navbar-sticky">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="home.html">About Us</a></li>
+            <li><a href="home.html">Parkings</a></li>
+            <li><a href="home.html">Feedback</a></li>
+            <li><a href="login.html"><ion-icon name="person"></ion-icon>&nbsp; Login</a></li>
+        </ul>
+        <div class="login">
+            <a href="login.html">Login</a>
+        </div>
+    </header>
+
+    <!-- RESERVATION SECTION-->
+    <div class="container">
+        <div class="item">
+
+            <img src="img/logo-white.png" alt="logo-Where to Park">
+            <div class="text-item">
+                <h2>Choose <br> <span>
+                        your spot!</span></h2>
+                <p>Choose your parking spot and the payment method .</p>
+            </div>
+
+            <div class="reservation-section">
+                <div class="form-box">
+                    <form action="">
+                        <br><br><br><br><br><br><br>
+                        
+                        <div class="input-box">
+                            <input type="text" required>
+                            <label for="">Name on Card</label>
+                        </div>
+
+                        <div class="input-box">
+                            <input type="text"  required>
+                            <label for="">Card Number</label>
+                        </div>
+                        
+                        <div class="input-box">
+                            <input type="date" required >
+                            <label for="">Expiry Date</label>
+                        </div>
+
+                        <div class="input-box">
+                            <input type="text"  required>
+                            <label for="">CVV</label>
+                        </div>
+
+                        <br>
+                        <button class="btn" class="payment-link"><a href="home.html">Pay Now</a></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
